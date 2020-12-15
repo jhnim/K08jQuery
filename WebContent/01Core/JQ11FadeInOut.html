@@ -6,7 +6,13 @@
     <title>JQ11FadeInOut.html</title>
     <link rel="stylesheet" href="../common/bootstrap4.5.3/css/bootstrap.css" />
     <script src="../common/jquery/jquery-3.5.1.js"></script>
-
+    
+    <style>
+        div{
+            width: 100px; height: 100px; display: none;
+        }
+    </style>
+    
     <script>
         $(function(){
             $('#btn1').click(function(){
@@ -22,20 +28,14 @@
             });
 
             $('#btn3').click(function(){
-                $('div1').fadeToggle();
-                $('div2').fadeToggle('normal');
-                $('div3').fadeToggle(3000);
+                $('#div1').fadeToggle();
+                $('#div2').fadeToggle('normal');
+                $('#div3').fadeToggle(3000);
             });
         });
     </script>
 </head>
 <body>
-
-    <style>
-        div{
-            width: 100px; height: 100px; display: none;
-        }
-    </style>
 	<h2>fadeIn() / fadeOut() / fadeToggle()</h2>
 	
 	<p>
